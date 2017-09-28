@@ -7,6 +7,10 @@ app.get("/hello", function(req, res){
   res.send("Hello!");
 });
 
+app.get("/goodbye", function(req, res){
+    res.send("goodbye!");
+  });
+
 app.all("*", function(req, res){
     res.sendStatus(404);
 });
